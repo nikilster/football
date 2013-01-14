@@ -24,11 +24,26 @@ body {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
 .subheader {
-  width: 278px;
+  width: 535px;
+  height: 40px;
   margin: auto;
+}
+.subheader .like,
+.subheader .link,
+.subheader .tweet {
+  position: relative;
+  float: left;
+}
+.subheader .like {
+  margin-top: 19px;
+  width: 140px;
 }
 .subheader .link {
   width: 278px;
+}
+.subheader .tweet {
+  margin-top: 19px;
+  width: 117px;
 }
 .subheader a {
   color: black;

@@ -14,10 +14,10 @@
 
 //Subtitle
 @LINK_WIDTH: 278px;
-@LIKE_WIDTH: 0px;
-@TWEET_WIDTH: 0px;
+@LIKE_WIDTH: 140px;
+@TWEET_WIDTH: 117px;
 @SUBTITLE_WIDTH: @LIKE_WIDTH + @LINK_WIDTH + @TWEET_WIDTH;
-
+@SUBTITLE_HEIGHT: 40px;
 //Main
 @MAIN_MARGIN: 60px;
 
@@ -66,12 +66,28 @@ body
 .subheader
 {
 	width:@SUBTITLE_WIDTH;
+	height:@SUBTITLE_HEIGHT;
 	margin:auto;
+
+	.like, .link, .tweet {
+		position:relative;
+		float:left;
+	}
+	
+	.like {
+		margin-top:19px;
+		width:@LIKE_WIDTH;
+	}
 
 	.link {
 		width:@LINK_WIDTH;
 	}
 
+	.tweet {
+		margin-top:19px;
+		width:@TWEET_WIDTH
+	}
+	
 	a {
 		color:black;
 	}

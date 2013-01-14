@@ -9,18 +9,32 @@
 
   </head>
   <body>
-    
+
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     <div id="wrap">
       <div class="container">
 
         <div class="header">
           <h1>The Faces of Jim Harbaugh</h1>
           <div class="subheader">
-            <div class="like"></div>
+            <div class="like">
+              <div class="fb-like" data-href="http://www.facesofharbaugh.com" data-send="true" data-layout="button_count" data-width="90" data-show-faces="true" data-font="arial"></div>
+            </div>
             <div class="link">
               <a href="../shaw/index.html"><h3>Faces of David Shaw</h3></a>
             </div>
-            <div class="tweet"></div>
+            <div class="tweet">
+             <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.facesofharbaugh.com">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
           </div>
         </div>
 
