@@ -11,6 +11,7 @@ var IMAGES = [
 	[3, "three times as good.jpg", 						"What is this??? A center for amateurs?? It needs to be at least... 3 times as good!"],
 	[1, "happy and you.jpg",							"If you're happy and you know it, clap your hands!"],
 	[0, "interception.gif",								"They inceptioned us!!?"],
+	[1, "mom meatloaf.jpg",								"MAAAAAAA THE MEAATLOAF!! I WANT IT NOOOOWW!!!!!"],
 	[1, "oops i did it again.jpg",						"Oops!..  I did it again. I played with your heart..."],
 	[0, "2.jpg",										"Use the Force, Padawan"],
 	[0, "angry elf.jpg",								"Harbaugh's an angry elf!"],
@@ -20,6 +21,7 @@ var IMAGES = [
 	[1, "5.jpg",										"I feel like I'm taking crazy pills!!!"],
 	//Longest Stringkeline
 	[3, "spoon.jpg", 									"I knew I wanted to be a football coach the first time I caught my reflection in a spoon."],
+	[1, "tiger harbaugh.jpg",							"Tiger Mom Harbaugh says: Only #1? Why not #0!?"],
 	[0, "mr congeniality.jpg",							"Mr. Congeniality"],
 	[1, "am i doing it is this a smile.jpg",			"Am I doing it right? I'm smiling? I'm smiling!"],
 	[1, "files are in the headphones.jpg", 				"The files are IN the headphones?"],
