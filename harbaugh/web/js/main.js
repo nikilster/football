@@ -13,8 +13,10 @@
 var CAROUSEL_INNER_SELECTOR = ".carousel-inner";
 var IMAGES_PATH = "web/image/pictures/";
 var LONG_TEXT_CLASS = "shortenText";
+var EXTRA_LONG_TEXT_CLASS = "reallyShorten";
 //Characters
-var LONG_LENGTH = 35;
+var LONG_LENGTH = 30;
+var EXTRA_LONG = 41;
 
 $(document).ready(function(){
 
@@ -68,13 +70,12 @@ function addImageWithCaption(filename, captionText, active)
 	})
 
 	var caption = $('<h1/>', {
+		//Shorten Text
+		"class": textSizeCSSClass(captionText),
 		//For FitText
 		text: captionText
 	})
 
-	//Shorten Text
-	if(isLongText(captionText)) 
-		caption.addClass(LONG_TEXT_CLASS);
 
 	//Caption -> Caption Div
 	carouselCaptionDiv.append(caption);
@@ -103,8 +104,13 @@ function urlForFilename(filename)
 /*
 	To Shorten String
 */
-function isLongText(text) {
+function textSizeCSSClass(text) {
 
-	console.log("comparing " + text.length + " to " + LONG_LENGTH);
-	return text.length >= LONG_LENGTH;
+	if(text.length >= EXTRA_LONG)
+		return EXTRA_LONG_TEXT_CLASS;
+
+	if(text.length >= LONG_LENGTH)
+		return LONG_TEXT_CLASS;
+
+	return "";
 }

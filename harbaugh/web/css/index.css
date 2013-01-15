@@ -98,6 +98,9 @@ body {
 .carousel-caption h1.shortenText {
   font-size: 30px;
 }
+.carousel-caption h1.reallyShorten {
+  font-size: 25px;
+}
 .carousel-control {
   top: 240px;
   left: -70px;
