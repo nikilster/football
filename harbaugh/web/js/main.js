@@ -12,11 +12,15 @@
 
 var CAROUSEL_INNER_SELECTOR = ".carousel-inner";
 var IMAGES_PATH = "web/image/pictures/";
+var LONG_TEXT_CLASS = "shortenText";
+//Characters
+var LONG_LENGTH = 35;
 
 $(document).ready(function(){
 
 	//Load the carousel images
 	loadCarouselImages();
+
 });
 
 /*
@@ -35,11 +39,11 @@ function loadCarouselImages()
 /*
 	Add to the DOM
 */
-function addImageWithCaption(filename, caption, active) 
+function addImageWithCaption(filename, captionText, active) 
 {
 
 	//Add Quotes!
-	caption = '"' + caption + '"';
+	captionText = '"' + captionText + '"';
 
 	/*
 		Add the Structure (active item for first shown): 
@@ -64,8 +68,13 @@ function addImageWithCaption(filename, caption, active)
 	})
 
 	var caption = $('<h1/>', {
-		text: caption
+		//For FitText
+		text: captionText
 	})
+
+	//Shorten Text
+	if(isLongText(captionText)) 
+		caption.addClass(LONG_TEXT_CLASS);
 
 	//Caption -> Caption Div
 	carouselCaptionDiv.append(caption);
@@ -78,8 +87,6 @@ function addImageWithCaption(filename, caption, active)
 	itemDiv.append(carouselCaptionDiv);
 	itemDiv.append(image);
 
-	console.log($(CAROUSEL_INNER_SELECTOR));
-	console.log(itemDiv);
 	//Add the Item
 	$(CAROUSEL_INNER_SELECTOR).append(itemDiv);
 
@@ -91,4 +98,13 @@ function addImageWithCaption(filename, caption, active)
 function urlForFilename(filename) 
 {
 	return IMAGES_PATH + filename;
+}
+
+/*
+	To Shorten String
+*/
+function isLongText(text) {
+
+	console.log("comparing " + text.length + " to " + LONG_LENGTH);
+	return text.length >= LONG_LENGTH;
 }
