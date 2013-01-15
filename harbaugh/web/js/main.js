@@ -12,11 +12,11 @@
 
 var CAROUSEL_INNER_SELECTOR = ".carousel-inner";
 var IMAGES_PATH = "web/image/pictures/";
-var LONG_TEXT_CLASS = "shortenText";
-var EXTRA_LONG_TEXT_CLASS = "reallyShorten";
-//Characters
-var LONG_LENGTH = 30;
-var EXTRA_LONG = 41;
+
+var HUGE = "textHuge";
+var BIG = "textBig";
+var NORMAL = "textNormal";
+var SMALLER = "textSmaller";
 
 $(document).ready(function(){
 
@@ -35,17 +35,17 @@ function loadCarouselImages()
 	START_INDEX = 0;
 
 	for(var i=0; i < IMAGES.length; i++)
-		addImageWithCaption(IMAGES[i][0], IMAGES[i][1], START_INDEX == i);
+		addImageWithCaption(IMAGES[i][1], IMAGES[i][2], IMAGES[i][0], START_INDEX == i);
 }
 
 /*
 	Add to the DOM
 */
-function addImageWithCaption(filename, captionText, active) 
+function addImageWithCaption(filename, captionText, captionTextSize, active) 
 {
 
 	//Add Quotes!
-	captionText = '"' + captionText + '"';
+	//captionText = '"' + captionText + '"';
 
 	/*
 		Add the Structure (active item for first shown): 
@@ -71,7 +71,7 @@ function addImageWithCaption(filename, captionText, active)
 
 	var caption = $('<h1/>', {
 		//Shorten Text
-		"class": textSizeCSSClass(captionText),
+		"class": textSizeCSSClass(captionTextSize),
 		//For FitText
 		text: captionText
 	})
@@ -102,15 +102,18 @@ function urlForFilename(filename)
 }
 
 /*
-	To Shorten String
+	To Size Font
 */
-function textSizeCSSClass(text) {
+function textSizeCSSClass(textSize) {
 
-	if(text.length >= EXTRA_LONG)
-		return EXTRA_LONG_TEXT_CLASS;
+	if(textSize == 0) return HUGE;
 
-	if(text.length >= LONG_LENGTH)
-		return LONG_TEXT_CLASS;
+	if(textSize == 1) return BIG;
 
+	if(textSize == 2) return NORMAL;
+
+	if(textSize == 3) return SMALLER;
+
+	//Handle edge
 	return "";
 }

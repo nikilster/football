@@ -78,29 +78,41 @@ body {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
 }
 .carousel-inner {
-  padding-bottom: 80px;
+  padding-bottom: 100px;
 }
 .carousel-inner > .item > img {
   position: relative;
-  top: 80px;
+  top: 100px;
 }
 .carousel-caption {
   position: absolute;
   bottom: auto;
   padding: 10px;
-  height: 60px;
+  height: 80px;
   background: black;
   text-align: center;
 }
 .carousel-caption h1 {
   font-size: 50px;
 }
-.carousel-caption h1.shortenText {
-  font-size: 30px;
+.carousel-caption h1.textHuge {
+  font-size: 50px;
+  margin-top: 19px;
 }
-.carousel-caption h1.reallyShorten {
-  font-size: 25px;
-  line-height: 30px;
+.carousel-caption h1.textBig {
+  font-size: 45px;
+  margin-top: -1px;
+  line-height: 40px;
+}
+.carousel-caption h1.textNormal {
+  font-size: 40px;
+  margin-top: 0px;
+  line-height: 40px;
+}
+.carousel-caption h1.textSmaller {
+  font-size: 32px;
+  margin-top: 0px;
+  line-height: 36px;
 }
 .carousel-control {
   top: 240px;

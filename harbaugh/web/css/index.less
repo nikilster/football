@@ -27,7 +27,7 @@
 @IMAGE_TOTAL: @IMAGE_WIDTH + 2*@IMAGE_PADDING;
 
 //Captions
-@CAPTION_HEIGHT: 60px;
+@CAPTION_HEIGHT: 80px;
 @CAPTION_PADDING: 10px;
 @CAPTION_TOTAL: @CAPTION_HEIGHT + 2*@CAPTION_PADDING;
 
@@ -146,15 +146,36 @@ body
 	text-align:center;
 	h1 {
 		font-size:50px;
+	} 
+
+	//0
+	h1.textHuge {
+		font-size:50px;
+		margin-top:19px;
 	}
 
-	h1.shortenText {
-		font-size:30px;
+	//1
+	//Two Lines
+	h1.textBig {
+		font-size:45px;
+		margin-top:-1px;
+		line-height:40px;
 	}
 
-	h1.reallyShorten {
-		font-size:25px;
-		line-height:30px;
+	//2
+	//Two lines
+	h1.textNormal {
+		font-size:40px;
+		margin-top:0px;
+		line-height:40px;
+	}
+
+	//3
+	//Two lines
+	h1.textSmaller {
+		font-size:32px;
+		margin-top:0px;
+		line-height:36px;
 	}
 	
 }
