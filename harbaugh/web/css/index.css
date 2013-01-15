@@ -21,7 +21,7 @@ body {
   text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
 .header h3 {
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
 .subheader {
   width: 535px;
@@ -47,6 +47,7 @@ body {
 }
 .subheader a {
   color: black;
+  text-decoration: underline;
 }
 .subheader a:hover {
   -webkit-transition: all 0.2s ease-out;
