@@ -28,5 +28,6 @@ var IMAGES = [
 	[1, "hey i just met you.jpg",						"Hey, I just met you, and this is craaaaaazyy..."],
 	[0, "touchdown.jpg",								"I love you this much"],
 	[0, "field goal.jpg",								"Wowwwww... I'm on TV!"],
-	[1, "i love smiling, smiling's my favorite.jpg", 	"I love smiling, smiling's my favorite!"]
+	[1, "i love smiling, smiling's my favorite.jpg", 	"I love smiling, smiling's my favorite!"],
+	[1, "this is san francisco.jpg",					"THIS. IS. SAN FRANCISCOOO!!!"]
 ];
