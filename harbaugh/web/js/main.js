@@ -30,6 +30,8 @@ $(document).ready(function(){
 */
 function loadCarouselImages() 
 {
+
+	IMAGES = randomizeArray(IMAGES);//N
 	//Imported IMAGES & CAPTIONS
 	//From images.js
 	START_INDEX = 0;
@@ -116,4 +118,16 @@ function textSizeCSSClass(textSize) {
 
 	//Handle edge
 	return "";
+}
+
+
+/*
+	Randomize Array
+	(Returns the array)
+*/
+
+function randomizeArray(array)
+{
+	 for(var j, x, i = array.length; i; j = parseInt(Math.random() * i), x = array[--i], array[i] = array[j], array[j] = x);
+    return array;
 }
