@@ -31,7 +31,8 @@ $(document).ready(function(){
 function loadCarouselImages() 
 {
 
-	IMAGES = randomizeArray(IMAGES);//N
+	IMAGES = randomizeArray(IMAGES);
+	
 	//Imported IMAGES & CAPTIONS
 	//From images.js
 	START_INDEX = 0;

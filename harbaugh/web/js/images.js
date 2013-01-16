@@ -15,7 +15,7 @@ var IMAGES = [
 	[1, "oops i did it again.jpg",						"Oops!..  I did it again. I played with your heart..."],
 	[0, "2.jpg",										"Use the Force, Padawan"],
 	[0, "angry elf.jpg",								"Harbaugh's an angry elf!"],
-	[0, "squishy.jpg",									"Bad Squishy! Bad Squishy!"],
+	[1, "squishy.jpg",									"Your feeble skills are no match for the Dark Side!"],//"Bad Squishy! Bad Squishy!"],
 	[0, "3.jpg", 										"Ohhhh Snap!"],
 	[1, "from now on, i'm calling it a football hat.jpg","From now on this is called a FOOTBALL hat!!"],
 	[1, "5.jpg",										"I feel like I'm taking crazy pills!!!"],
