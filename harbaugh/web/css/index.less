@@ -13,7 +13,7 @@
 @HEADER_MARGIN: 40px;
 
 //Subtitle
-@LINK_WIDTH: 278px;
+@LINK_WIDTH: 250px;
 @LIKE_WIDTH: 140px;
 @TWEET_WIDTH: 117px;
 @SUBTITLE_WIDTH: @LIKE_WIDTH + @LINK_WIDTH + @TWEET_WIDTH;
@@ -44,15 +44,24 @@ body
 	color:@TEXT_COLOR;
 }
 
+a:hover {
+	text-decoration: underline;
+	color:white;
+	.transition(.2s);
+}
+
 .textShadow {	
 	text-shadow: 0 6px 12px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+
+.textShadowSmall {
+	//text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 }
 
 .header
 {
 	margin-top:@HEADER_MARGIN;
 	text-align:center;
-	//text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 
 	h1
 	{
@@ -92,15 +101,7 @@ body
 		margin-top:19px;
 		width:@TWEET_WIDTH
 	}
-	
-	a {
-		color:white;
-		text-decoration: underline;
-	}
-	a:hover {
-		.transition(.2s);
-		color:#08c;
-	}
+
 }
 
 .main
@@ -125,6 +126,16 @@ body
 
 	.box-shadow(0 3px 6px rgba(0,0,0,.5));
 
+}
+
+.submit
+{
+	width:100%;
+	font-size:24px;
+	font-weight:bold;
+	margin-bottom:10px;
+	text-align: center;
+	.textShadow;
 }
 
 //Carousel

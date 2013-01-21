@@ -1,4 +1,7 @@
 /*
+	Create.less	
+*/
+/*
 	Main Visuals 
 
 */
@@ -176,4 +179,34 @@ body {
     padding-left: 20px;
     padding-right: 20px;
   }
+}
+.title {
+  text-align: center;
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+.form-horizontal {
+  width: 530px;
+  margin: auto;
+  margin-top: 20px;
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+.form-horizontal button {
+  margin-right: 66px;
+}
+.errorMessage,
+.success {
+  text-align: center;
+  font-size: 24.5px;
+  line-height: normal;
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
+.success a {
+  text-decoration: underline;
+}
+.success a:hover {
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  color: white;
 }
