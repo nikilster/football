@@ -12,6 +12,9 @@ body {
   background-image: url('../image/cardinal.png');
   color: #ffffff;
 }
+.textShadow {
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+}
 .header {
   margin-top: 40px;
   text-align: center;
@@ -21,7 +24,7 @@ body {
   text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
 .header h3 {
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.4), 0 0 30px rgba(0, 0, 0, 0.075);
 }
 .subheader {
   width: 535px;
@@ -46,7 +49,7 @@ body {
   width: 117px;
 }
 .subheader a {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 .subheader a:hover {
@@ -54,7 +57,7 @@ body {
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: white;
+  color: #08c;
 }
 .main {
   width: 716px;

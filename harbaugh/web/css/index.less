@@ -44,6 +44,10 @@ body
 	color:@TEXT_COLOR;
 }
 
+.textShadow {	
+	text-shadow: 0 6px 12px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+}
+
 .header
 {
 	margin-top:@HEADER_MARGIN;
@@ -53,11 +57,12 @@ body
 	h1
 	{
 		font-size:70px;
-		text-shadow: 0 6px 12px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+		.textShadow;
 	}
 
 	h3 {
-		text-shadow: 0 1px 1px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+		.textShadow;
+		//text-shadow: 0 1px 1px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
 	}
 
 
@@ -89,12 +94,12 @@ body
 	}
 	
 	a {
-		color:black;
+		color:white;
 		text-decoration: underline;
 	}
 	a:hover {
 		.transition(.2s);
-		color:white;
+		color:#08c;
 	}
 }
 
