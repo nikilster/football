@@ -31,5 +31,5 @@ var IMAGES = [
 	[1, "i love smiling, smiling's my favorite.jpg", 	"I love smiling, smiling's my favorite!"],
 	[1, "this is.jpg",									"THIS. IS. SAN FRANCISCOOO!!!"],
 	[1, "dad.jpg",										"Dad What!? I'm grounded this weekend!?"],
-	[2, "donkey kong.gif",								"Donkey Kong Football: Harbaugh Edition"],
+	[2, "donkey kong.gif",								"YOU'RE MAKING ME ANGRY!!!!"],
 ];
